@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Gotta Click Them All!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <audio loop autoplay>
+        <source src="./assets/audio/crystal_method.mp3" type="audio/mp3">
+    </audio>
+    <div class="jumbotron">
+        <h1 class="text-center">Crystal Collector!</h1>
+        <div class="text-center">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <div class="card text-white bg-dark mb-3">
+                    <div class="card-body">
+                        <h4 class="card-title">Rules</h4>
+                        <p class="card-text">You will be given a random number at the start of the game.</p>
+                        <p class="card-text">There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                            to your total score.</p>
+                        <p class="card-text">You win the game by matching your total score to the random number, you lose the game if your total
+                            score is greater than the random number.</p>
+                        <p class="card-text">The value of each crystal is hidden from you until you click on it.</p>
+                        <p class="card-text">The value of each crystal will change at the start of every game.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="card text-white bg-info mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Match this Random Number</h5>
+                                <p class="card-text font-weight-bold" id="random-number"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="card text-white bg-warning mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Total Score</h5>
+                                <p class="card-text font-weight-bold" id="total-score"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="card text-white bg-success mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Wins</h5>
+                                <p class="card-text" id="number-of-wins"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="card text-white bg-danger mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Losses</h5>
+                                <p class="card-text" id="number-of-losses"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-3">
+                <img src="assets/images/billy_crystal.jpg" id="crystal-1" alt="Billy Crystal" class="rounded mx-auto d-block">
+            </div>
+            <div class="col-sm-3">
+                <img src="assets/images/crystal_castles.jpg" id="crystal-2" alt="Crystal Castles" class="rounded mx-auto d-block">
+            </div>
+            <div class="col-sm-3">
+                <img src="assets/images/crystal_palace.jpg" id="crystal-3" alt="Crystal Palace FC" class="rounded mx-auto d-block">
+            </div>
+            <div class="col-sm-3">
+                <img src="assets/images/crystal_pepsi.jpg" id="crystal-4" alt="Crystal Pepsi" class="rounded mx-auto d-block">
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+     <script src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
