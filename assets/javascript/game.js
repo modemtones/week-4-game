@@ -42,7 +42,7 @@ $(document).ready(function () {
 
     //capture clicks on crystal and update score
     $("#crystal-1").click(function () {
-        userScore+=crystalTwo.value;
+        userScore+=crystalOne.value;
         $("#total-score").text(userScore);
         scoreGame();
     });
